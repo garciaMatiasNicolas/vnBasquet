@@ -1,0 +1,848 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+/*mobile-smartphone*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Background-colors */
+body {
+  background-color: rgba(255, 255, 255, 0.692) !important;
+}
+
+.bgNba {
+  background-color: rgba(1, 1, 61, 0.953) !important;
+}
+
+.bgEur {
+  background-color: rgba(255, 68, 0, 0.91) !important;
+}
+
+.bgAcb {
+  background-color: rgb(34, 180, 228) !important;
+}
+
+.bgLnb {
+  background-color: rgba(223, 0, 0, 0.89) !important;
+}
+
+/* Grillas */
+.grilla {
+  display: grid;
+  grid-template-areas: "nav" "main" "footer";
+  grid-template-rows: 0.1fr 3fr auto;
+  gap: 1rem;
+}
+
+/* Navs */
+.navStyle {
+  grid-area: nav;
+  background-color: transparent;
+  border-bottom: rgba(0, 0, 0, 0.226) 0.5px ridge;
+}
+.navStyle .nombreSitio {
+  color: black;
+  font-weight: 800;
+  font-size: xx-large;
+  font-family: "Open Sans", sans-serif;
+  margin: 15px;
+  -webkit-text-stroke: 1px aliceblue;
+}
+
+.user {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
+
+.navLiga {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+}
+.navLiga .lista {
+  list-style: none;
+}
+
+.navSection {
+  height: 20rem;
+  margin-top: 2rem;
+}
+.navSection .navTitle {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 10px;
+  color: black;
+}
+.navSection .navIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.navSection .navIndex .displayNav {
+  width: 48%;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  border: 0.5px rgba(35, 34, 34, 0.199) ridge;
+}
+.navSection .navIndex .displayNav .legue {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.navSection .navIndex .displayNav .legue .logos {
+  margin-left: 8px;
+  width: 4rem;
+  height: 4rem;
+}
+.navSection .navIndex .displayNav .legue .subtitulo {
+  display: inline-block;
+  text-align: justify;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+.navSection .navIndex .displayNav .legue .subtitulo .comp {
+  font-size: 12.5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: grey;
+}
+.navSection .navIndex .displayNav .legue .subtitulo .legue {
+  font-size: larger;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: black;
+  margin: 0;
+}
+
+.ancla {
+  color: black;
+  margin-top: 25px;
+  display: inline-block;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 15px;
+}
+
+.displayMobile {
+  display: contents;
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+.list .userLogo {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+/* Divisiones */
+.division {
+  margin-top: 4rem;
+  margin-left: 10px;
+  border-bottom: rgba(0, 0, 0, 0.226) 1px ridge;
+}
+.division .top2 {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.division2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  border-bottom: rgba(0, 0, 0, 0.226) 1px ridge;
+  margin-top: 15px;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-bottom: 15px;
+}
+.division2 .imgLiga {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-left: 20px;
+}
+.division2 .imgLiga .nameLiga {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.division2 .imgLiga .nameLiga .competencia {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  color: black;
+  margin-bottom: 15px;
+}
+.division2 .imgLiga .nameLiga .liga {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: xx-large;
+  color: black;
+}
+.division2 .imgLiga .ligaLogo {
+  width: 8rem;
+  height: 8rem;
+  border: 1px rgba(0, 0, 0, 0.507) solid;
+  border-radius: 8rem;
+}
+
+.division3 {
+  margin-top: 15px;
+}
+.division3 .top5 {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 10px;
+  color: black;
+}
+
+/* Noticias */
+main {
+  grid-area: main;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.noticiaPrincipal {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.noticiaPrincipal .cardPrincipal {
+  width: 100%;
+  height: 20%;
+  border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+  border-radius: 5px;
+}
+.noticiaPrincipal .principal {
+  width: 100%;
+  height: 75%;
+}
+.noticiaPrincipal .tituloPrincipal {
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 15px;
+  margin-left: 10px;
+  color: black;
+}
+.noticiaPrincipal .parrafoPrincipal {
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 5px;
+  color: black;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+.noticiaPrincipal .videos {
+  display: none;
+}
+
+.noticiaSecundaria {
+  width: 0.5fr;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  gap: 1rem;
+  margin-top: 25px;
+  margin-left: 2rem;
+}
+.noticiaSecundaria .secundaria {
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.noticiaSecundaria .estiloSub {
+  text-align: start;
+  font-size: 18px;
+}
+.noticiaSecundaria .cardS {
+  border-radius: 7px;
+}
+.noticiaSecundaria .cardS:hover {
+  transition: 0.5s;
+  transform: translateY(-5px);
+}
+.noticiaSecundaria .cardAcb {
+  background-color: rgb(34, 180, 228);
+}
+.noticiaSecundaria .cardNba {
+  background-color: rgba(0, 0, 37, 0.953);
+}
+.noticiaSecundaria .cardEur {
+  background-color: rgba(255, 68, 0, 0.91);
+}
+.noticiaSecundaria .cardLnb {
+  background-color: rgba(223, 0, 0, 0.89);
+}
+
+/* Forms */
+.formularios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  gap: 2rem;
+}
+.formularios .infoPersonal {
+  border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+  display: inline-block;
+  border-radius: 5px;
+  width: 90%;
+}
+.formularios .preferencias {
+  border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+  display: inline-block;
+  border-radius: 5px;
+  width: 90%;
+}
+.formularios .preferencias .radioBoton {
+  margin-left: 7px;
+}
+.formularios .preferencias .idiomas {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 7px;
+}
+.formularios .equipoFav {
+  border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+  display: inline-block;
+  border-radius: 5px;
+  width: 90%;
+}
+.formularios .equipoFav .menuDespl {
+  margin-left: 4px;
+  margin-bottom: 7px;
+}
+
+.formularios1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.formularios1 .logIn {
+  display: contents;
+}
+.formularios1 .logIn .logIn-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: xx-large;
+  font-weight: 600;
+}
+.formularios1 .logIn .logIn-sub {
+  text-align: center;
+  width: 80%;
+}
+.formularios1 .intervalo {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.formularios1 .intervalo .separador {
+  width: 10rem;
+}
+.formularios1 .iniciarSesion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+  border-radius: 5px;
+  width: 90%;
+}
+.formularios1 .iniciarSesion .input {
+  display: flex;
+  justify-content: center;
+}
+.formularios1 .buttons {
+  width: 100%;
+}
+.formularios1 .buttons .socialLogo {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+.boton {
+  color: white;
+  width: 4rem;
+  border-radius: 5px;
+  background-color: brown;
+  margin-left: 4px;
+}
+
+/* Tablas */
+.tablas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+.tablas .tabla {
+  width: 80%;
+}
+.tablas .tabla .estiloTitulo {
+  font-family: "Open Sans", sans-serif;
+  font-size: large;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.tablas .tabla .clasificado {
+  border-left: solid 4px rgba(0, 128, 0, 0.495);
+}
+.tablas .tabla .play-in {
+  border-left: solid 4px rgba(255, 255, 0, 0.76);
+}
+.tablas .tabla .afuera {
+  border-left: solid 4px red;
+}
+.tablas .tabla2 {
+  width: 80%;
+}
+.tablas .tabla2 .estiloTitulo {
+  font-family: "Open Sans", sans-serif;
+  font-size: large;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.tablas .tabla2 .player {
+  width: 6rem;
+  height: 6rem;
+}
+
+.contenedorPartidos {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background-color: black !important;
+  border-top: 1px solid white;
+  grid-area: footer;
+}
+footer .nombreF {
+  color: white;
+  font-weight: medium;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+footer .textoF {
+  text-decoration: none;
+  color: white;
+}
+
+/*desktop*/
+@media (min-width: 1024px) {
+  .noticiaPrincipal {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    gap: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .noticiaPrincipal .cardPrincipal {
+    width: 700px;
+    height: 20%;
+    border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+    border-radius: 5px;
+  }
+  .noticiaPrincipal .videos {
+    background-color: rgba(0, 0, 0, 0.961);
+    border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+    border-radius: 5px;
+    height: 30rem;
+    width: 40% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+  }
+  .noticiaPrincipal .videos .jugadas {
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .noticiaPrincipal .videos .video {
+    width: 70%;
+    height: 100%;
+  }
+  .noticiaPrincipal .videos .video .video1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .user {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .tablas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+  .tablas .tabla {
+    width: 30%;
+  }
+  .tablas .tabla2 {
+    width: 25%;
+  }
+
+  .contenedorPartidos {
+    width: 100%;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    margin-top: 3rem;
+    background-color: rgba(0, 0, 0, 0.961);
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+  .contenedorPartidos .tituloPart {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: aliceblue;
+  }
+  .contenedorPartidos .partidos {
+    height: 90%;
+    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contenedorPartidos .partido {
+    display: flex;
+    width: 19rem;
+    height: 70%;
+    border-radius: 7px;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+  }
+  .contenedorPartidos .partido:hover {
+    transition: 0.5s;
+    border: 3px solid white;
+    transform: translateY(-5px);
+  }
+
+  .videos {
+    background-color: aqua;
+    width: 20%;
+    height: 20%;
+  }
+
+  .list {
+    list-style: none;
+    text-decoration: none;
+  }
+  .list .userLogo {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+  }
+
+  .formularios1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+  .formularios1 .logIn {
+    display: contents;
+  }
+  .formularios1 .logIn .logIn-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+  }
+  .formularios1 .logIn .logIn-sub {
+    text-align: center;
+    width: 30%;
+  }
+  .formularios1 .iniciarSesion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+    border-radius: 5px;
+    width: 50%;
+  }
+  .formularios1 .buttons {
+    width: 100%;
+  }
+  .formularios1 .buttons .socialLogo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .noticiaSecundaria {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: left;
+    margin-top: 25px;
+  }
+}
+/*mobile - tablet*/
+@media (min-width: 622px) {
+  .noticiaSecundaria {
+    width: 0.5fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: left;
+    margin-top: 25px;
+  }
+
+  .navIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  .navIndex .displayNav {
+    width: 280px;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .formularios1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+  }
+  .formularios1 .logIn {
+    display: contents;
+  }
+  .formularios1 .logIn .logIn-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+  }
+  .formularios1 .logIn .logIn-sub {
+    text-align: center;
+    width: 80%;
+  }
+  .formularios1 .intervalo {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .formularios1 .intervalo .separador {
+    width: 17rem;
+  }
+  .formularios1 .buttons {
+    width: 100%;
+  }
+  .formularios1 .buttons .socialLogo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+  }
+
+  .formularios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left !important;
+    gap: 2rem;
+  }
+  .formularios .infoPersonal {
+    border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+    display: inline-block;
+    border-radius: 5px;
+    width: 530px;
+  }
+  .formularios .preferencias {
+    border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+    display: inline-block;
+    border-radius: 5px;
+    width: 530px;
+  }
+  .formularios .preferencias .radioBoton {
+    margin-left: 7px;
+  }
+  .formularios .preferencias .idiomas {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 7px;
+  }
+  .formularios .equipoFav {
+    border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+    display: inline-block;
+    border-radius: 5px;
+    width: 530px;
+  }
+  .formularios .equipoFav .menuDespl {
+    margin-left: 4px;
+    margin-bottom: 7px;
+  }
+}
+@media (min-width: 768px) {
+  .noticiaPrincipal {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .noticiaPrincipal .cardPrincipal {
+    width: 700px;
+    height: 20%;
+    border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+    border-radius: 5px;
+  }
+  .noticiaPrincipal .videos {
+    background-color: rgba(0, 0, 0, 0.961);
+    border: rgba(0, 0, 0, 0.226) 0.5px ridge;
+    border-radius: 5px;
+    height: 18rem;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+  }
+  .noticiaPrincipal .videos .jugadas {
+    color: aliceblue;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .noticiaPrincipal .videos .video {
+    width: 20rem;
+    height: 15rem;
+  }
+  .noticiaPrincipal .videos .video .video1 {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .tablas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+  .tablas .tabla {
+    width: 40%;
+  }
+  .tablas .tabla2 {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 868px) {
+  .navSection {
+    height: 15rem;
+  }
+  .navSection .navIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  .navSection .navIndex .displayNav {
+    width: 200px;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none !important;
+  }
+  .navSection .navIndex .displayNav:hover {
+    transition: 0.5s;
+    transform: translateY(-5px);
+    border: 0.5px rgba(35, 34, 34, 0.199) solid !important;
+  }
+}/*# sourceMappingURL=styles.css.map */

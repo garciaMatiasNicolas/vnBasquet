@@ -140,6 +140,10 @@ body {
   margin-right: 15px;
 }
 
+.ancla2 {
+  display: none;
+}
+
 .displayMobile {
   display: contents;
 }
@@ -481,6 +485,16 @@ footer .textoF {
 
 /*desktop*/
 @media (min-width: 1024px) {
+  .ancla2 {
+    color: black;
+    margin-top: 25px;
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    margin-right: 15px;
+  }
+
   .noticiaPrincipal {
     margin-top: 3rem;
     display: flex;

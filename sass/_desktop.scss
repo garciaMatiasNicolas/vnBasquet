@@ -5,6 +5,16 @@ $borderColor: rgba(35, 34, 34, 0.199);
 
 @media(min-width:1024px) {
 
+    .ancla2{
+        color: $fontColor;
+        margin-top: 25px;
+        display: inline-block; 
+        list-style-type: none ;
+        text-decoration: none ;
+        font-family: $fontType;
+        margin-right: 15px;
+    }
+
     .noticiaPrincipal{
         margin-top: 3rem;
         display: flex;
